@@ -123,7 +123,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        {/* <div className="div-community">
+        <div className="div-community">
           <div className="div-incom">
             <div className="title-comm">Discover the Dextimize community</div>
             <div className="text-comm">
@@ -217,15 +217,16 @@ const Home: NextPage = () => {
         </div>
         <div className="div-comingsoon">
           <div className="shadow-comingsoon">
-          <div className="title-comingsoon">
-            The easiest and quickest way to launch your DEX
+            <div className="title-comingsoon">
+              The easiest and quickest way to launch your DEX
+            </div>
+            <div className="text-comingsoon">
+              Dextimize is the first generative platform to streamline launching
+              your own DEX. You can customize and create your own exchange in a
+              matter of minutes
+            </div>
           </div>
-          <div className="text-comingsoon">
-            Dextimize is the first generative platform to streamline launching
-            your own DEX. You can customize and create your own exchange in a
-            matter of minutes
-          </div></div>
-        </div> */}
+        </div>
       </main>
 
       <footer className={styles.footer}>

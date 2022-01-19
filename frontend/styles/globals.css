@@ -246,8 +246,8 @@ a {
 
 .title-comm {
   margin-top: 61px;
-  width: 404px;
-  height: 28px;
+  max-width: 404px;
+  min-height: 28px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -259,8 +259,8 @@ a {
 
 .text-comm {
   margin-top: 16px;
-  width: 447px;
-  height: 88px;
+  max-width: 447px;
+  min-height: 88px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -293,7 +293,7 @@ a {
 }
 
 .title-browse {
-  width: 871px;
+  max-width: 871px;
   height: 21px;
 
   font-family: "Roboto";
@@ -308,7 +308,7 @@ a {
 
 .text-browse {
   margin-top: 20px;
-  width: 759px;
+  max-width: 759px;
   height: 72px;
 
   font-family: "Roboto";
@@ -324,6 +324,7 @@ a {
 .div-search {
   margin-top: 34px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .input-search {
@@ -425,8 +426,8 @@ a {
 .div-comingsoon {
   margin-top: 77px;
   background-image: url(../public/bg5.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: round;
   width: 86vw;
   height: 260px;
   padding-top: 66px;
@@ -449,7 +450,7 @@ a {
 
 .text-comingsoon {
   margin-top: 15px;
-  width: 800px;
+  max-width: 800px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -488,5 +489,43 @@ a {
 
   .img-built {
     margin: 0 20px;
+  }
+
+  .div-incom {
+    margin: 10px 0;
+    width: auto;
+    background: url(../public/bg3.png);
+    background-size: cover;
+    background-repeat: round;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .div-income {
+    display: none;
+  }
+
+  .content-browse {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .content-browse div {
+    height: auto;
+  }
+
+  .div-search * {
+    margin: 10px;
+  }
+
+  .div-sites {
+    justify-content: center;
+  }
+
+  .div-comingsoon {
+    height: auto;
+    padding: 50px 20px;
   }
 }
