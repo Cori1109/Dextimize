@@ -29,6 +29,11 @@ a {
   display: flex;
 }
 
+.div-Logo:hover,
+.div-sign:hover {
+  color: #858b9b;
+}
+
 .div-Logo img {
   margin-right: 3px;
 }
@@ -65,6 +70,10 @@ a {
 
 .div-link a {
   margin-right: 20px;
+}
+
+.div-link a:hover {
+  transform: scale(1.05);
 }
 
 .div-builtStep a {
