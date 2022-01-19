@@ -2,8 +2,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Logo from "../public/vercel.svg";
-import Avatar from "../public/avatar.png";
 
 const Home: NextPage = () => {
   return (
@@ -32,7 +30,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <div className="div-welcome">
           <div className="div-inside">
-            <div className={styles.title}>WEB 3.0 AT YOUR FINGERTIPS</div>
+            <div className="title-welcome">WEB 3.0 AT YOUR FINGERTIPS</div>
 
             <div className={styles.description}>
               We provide you the framework to jet speed your ideas.
@@ -93,12 +91,7 @@ const Home: NextPage = () => {
           <div className="div-inbuilt">
             <div className="rectangle-built hoverEffect">
               <div className="img-built">
-                <Image
-                  src="/icons-lightning.png"
-                  alt="Lightning Icon"
-                  width={52}
-                  height={52}
-                />
+                <img src="/icons-lightning.png" alt="Lightning Icon" />
               </div>
               <div className="text-built">
                 <div className="subTitle">Build fast</div>
@@ -109,12 +102,7 @@ const Home: NextPage = () => {
             </div>
             <div className="rectangle-built hoverEffect">
               <div className="img-built">
-                <Image
-                  src="/icons-creativity.png"
-                  alt="Creativity Icon"
-                  width={52}
-                  height={52}
-                />
+                <img src="/icons-creativity.png" alt="Creativity Icon" />
               </div>
               <div className="text-built">
                 <div className="subTitle">Build smart</div>
@@ -126,12 +114,7 @@ const Home: NextPage = () => {
             </div>
             <div className="rectangle-built hoverEffect">
               <div className="img-built">
-                <Image
-                  src="/icons-crowdfunding.png"
-                  alt="Crowdfunding Icon"
-                  width={52}
-                  height={52}
-                />
+                <img src="/icons-crowdfunding.png" alt="Crowdfunding Icon" />
               </div>
               <div className="text-built">
                 <div className="subTitle">Expand</div>
@@ -140,7 +123,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="div-community">
+        {/* <div className="div-community">
           <div className="div-incom">
             <div className="title-comm">Discover the Dextimize community</div>
             <div className="text-comm">
@@ -149,7 +132,7 @@ const Home: NextPage = () => {
               for inspiration.
             </div>
           </div>
-          <div className="div-income">{/* <img src="/bg3.png"></img> */}</div>
+          <div className="div-income"></div>
         </div>
         <div className="div-browse">
           <div className="content-browse">
@@ -233,6 +216,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="div-comingsoon">
+          <div className="shadow-comingsoon">
           <div className="title-comingsoon">
             The easiest and quickest way to launch your DEX
           </div>
@@ -240,8 +224,8 @@ const Home: NextPage = () => {
             Dextimize is the first generative platform to streamline launching
             your own DEX. You can customize and create your own exchange in a
             matter of minutes
-          </div>
-        </div>
+          </div></div>
+        </div> */}
       </main>
 
       <footer className={styles.footer}>
