@@ -241,7 +241,7 @@ a {
 }
 
 .div-incom {
-  width: 50%;
+  width: 40vw;
 }
 
 .title-comm {
@@ -271,10 +271,7 @@ a {
 }
 
 .div-income {
-  width: 50%;
-  width: 616px;
   height: 254px;
-  background: url(../public/bg3.png);
   border-radius: 8px;
 }
 

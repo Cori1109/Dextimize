@@ -132,7 +132,9 @@ const Home: NextPage = () => {
               for inspiration.
             </div>
           </div>
-          <div className="div-income"></div>
+          <div className="div-income">
+            <img src="/bg3.png" />
+          </div>
         </div>
         <div className="div-browse">
           <div className="content-browse">
