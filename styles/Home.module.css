@@ -11,81 +11,143 @@
   align-items: center;
 }
 
+.topBar {
+  display: flex;
+  margin: 64px 0 0 0;
+  width: 95%;
+  align-content: center;
+  justify-content: space-between;
+  color: #fffbfb;
+}
+.logoLink,
+.signLink {
+  display: flex;
+}
+
+.logoLink:hover,
+.signLink:hover {
+  color: #858b9b;
+}
+
+.logoLink img {
+  margin-right: 3px;
+}
+
+.signLink img {
+  margin-right: 11px;
+}
+
 .welcomeDiv {
-  margin-top: 30px;
-  width: 95vw;
-  padding: 457px 0 52px 77px;
+  margin-top: 38px;
+  margin-right: 173px;
+  width: 85vw;
+  padding: 470px 0 0 88px;
   background-image: url("/bg-home.png");
   background-size: inherit;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position-x: right;
   border-radius: 0.5rem;
 }
 
-/* // */
+.welcomeTitle {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 26px;
+  color: #f6f6f7;
+}
+
+.linkDiv {
+  margin-top: 15px;
+}
+
+.linkDiv a {
+  margin-right: 15px;
+}
+
 .chooseDiv {
-  margin-top: 200px;
-  margin-bottom: 400px;
+  margin-top: 154px;
+  margin-bottom: 610px;
+  flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
   width: 90%;
 }
 
 .welTitle {
-  margin: 19px 0;
-  max-width: 450px;
-  font-family: "Roboto";
-  font-size: 24px;
+  font-family: Roboto;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 36px;
   line-height: 26px;
-  letter-spacing: 0px;
-  text-align: left;
   color: #f6f6f7;
 }
 
 .description {
-  margin: 19px 0;
-  font-family: "Roboto";
-  font-size: 20px;
-  font-weight: lighter;
+  margin-top: 19px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
   line-height: 26px;
-  text-align: left;
   color: #f6f6f7;
 }
 
 .chooseText {
-  max-width: 450px;
-  font-family: "Roboto";
-  font-size: 20px;
-  font-weight: lighter;
+  margin-top: 10px;
+  max-width: 480px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
   line-height: 26px;
-  text-align: left;
   color: #f6f6f7;
 }
 
 .platformDiv {
+  padding-top: 15px;
+  padding-left: 42px;
+  flex-wrap: wrap;
   display: flex;
-  justify-content: flex-start;
-  width: 60%;
 }
 
 .platformDiv a {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
-  margin-right: 50px;
-  color: #f6f6f7;
-  font-size: 12px;
+  margin-right: 59px;
 }
 
 .platformDiv div {
-  margin-top: 10px;
+  margin-top: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #f6f6f7;
 }
 
 @media screen and (max-width: 760px) {
   .welcomeDiv {
-    padding: 200px 20px 10px 20px;
-    width: 90vw;
+    margin: auto;
+    padding: 200px 20px 0 20px;
+  }
+
+  .welcomeTitle {
+    line-height: normal;
+  }
+
+  .chooseDiv {
+    flex-direction: column;
+    margin-bottom: 300px;
+  }
+
+  .platformDiv {
+    justify-content: center;
+    padding: 30px;
+    width: auto;
+  }
+
+  .platformDiv a {
+    margin: 20px;
   }
 }

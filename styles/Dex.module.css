@@ -97,59 +97,62 @@
 
 .builtStep a * {
   width: 178px;
-  height: 28px;
   font-family: "Roboto";
+  font-style: normal;
   font-weight: 300;
   font-size: 24px;
+  letter-spacing: 0px;
+  text-align: left;
   line-height: 26px;
   color: #fffbfb;
 }
 
-.card-grid {
+.dexCard {
+  background-image: url("../public/card-dex.png");
+  padding: 150px 0 0 44px;
+}
+
+.tokenCard {
+  background-image: url("../public/card-token.png");
+  padding: 150px 0 0 50px;
+}
+
+.liquidCard {
+  background-image: url("../public/card-liquid.png");
+  padding: 150px 0 0 48px;
+}
+
+.tradingCard {
+  background-image: url("../public/card-trading.png");
+  padding: 142px 0 0 54px;
+}
+
+.dexCard,
+.tokenCard,
+.liquidCard,
+.tradingCard {
   background-size: contain;
   background-repeat: no-repeat;
   height: 225px;
   width: 240px;
 }
 
-.card-dex {
-  background-image: url("../public/card-dex.png");
-  padding: 150px 0 0 44px;
+.dexCard:hover,
+.tokenCard:hover,
+.liquidCard:hover,
+.tradingCard:hover {
+  -ms-transform: scaleY(1.02);
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
-.card-token {
-  background-image: url("../public/card-token.png");
-  padding: 150px 0 0 50px;
-}
-
-.card-liquid {
-  background-image: url("../public/card-liquid.png");
-  padding: 150px 0 0 48px;
-}
-
-.card-trading {
-  background-image: url("../public/card-trading.png");
-  padding: 142px 0 0 54px;
-}
-
-.card-grid * {
-  font-family: "Roboto";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 26px;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #fffbfb;
-}
-
-.div-built {
+.builtDiv {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
 }
 
-.card-built {
+.cardDiv {
   display: flex;
   flex-direction: column;
   padding-bottom: 32px;
@@ -161,7 +164,7 @@
   background-image: url("../public/bg2.png");
 }
 
-.title-built {
+.builtTitle {
   font-family: "Roboto";
   font-size: 28px;
   font-weight: 500;
@@ -172,7 +175,7 @@
   color: #fffbfb;
 }
 
-.card-built p {
+.cardDiv p {
   height: 23px;
   font-family: "Roboto";
   font-weight: 300;
@@ -181,20 +184,14 @@
   color: #fffbfb;
 }
 
-.hoverScaled:hover {
-  -ms-transform: scaleY(1.25);
-  transform: scale(1.02);
-  cursor: pointer;
-}
-
-.div-inbuilt {
+.inbuiltDiv {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 9px;
 }
 
-.rectangle-built {
+.builtRec {
   /* Rectangle 30 */
   width: 574px;
   height: 130px;
@@ -208,14 +205,14 @@
   align-items: center;
 }
 
-.img-built {
+.builtImg {
   width: 52px;
   height: 52px;
   margin-left: 43px;
   margin-right: 43px;
 }
 
-.text-built {
+.builtText {
   max-width: 400px;
 }
 
@@ -235,18 +232,18 @@
   color: #858b9b;
 }
 
-.div-community {
+.communityDiv {
   margin-top: 84px;
   display: flex;
   border-top: 1px solid #3a3c40;
   border-bottom: 1px solid #3a3c40;
 }
 
-.div-incom {
+.incomDiv {
   width: 40vw;
 }
 
-.title-comm {
+.commTitle {
   margin-top: 61px;
   max-width: 404px;
   min-height: 28px;
@@ -259,7 +256,7 @@
   color: #fffbfb;
 }
 
-.text-comm {
+.commText {
   margin-top: 16px;
   max-width: 447px;
   min-height: 88px;
@@ -272,16 +269,16 @@
   color: #fffbfb;
 }
 
-.div-income {
+.incomeDiv {
   height: 254px;
   border-radius: 8px;
 }
 
-.div-browse {
+.browseDiv {
   margin-top: 90px;
 }
 
-.content-browse {
+.browseContent {
   padding-top: 199px;
   padding-left: 45px;
   height: 314px;
@@ -291,7 +288,7 @@
   border-radius: 8px;
 }
 
-.title-browse {
+.browseTitle {
   max-width: 871px;
   height: 21px;
 
@@ -305,7 +302,7 @@
   color: #fffbfb;
 }
 
-.text-browse {
+.browseText {
   margin-top: 20px;
   max-width: 759px;
   height: 72px;
@@ -320,13 +317,13 @@
   color: #fffbfb;
 }
 
-.div-search {
+.searchDiv {
   margin-top: 34px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.input-search {
+.searchInput {
   padding-left: 25px;
   width: 288px;
   height: 45px;
@@ -343,11 +340,11 @@
   color: #858b9b;
 }
 
-.input-search:hover {
+.searchInput:hover {
   background: #26282e;
 }
 
-.btn-search {
+.searchBtn {
   padding-left: 16px;
   padding-right: 16px;
   margin-left: 23px;
@@ -367,18 +364,18 @@
   color: #858b9b;
 }
 
-.btn-search img {
+.searchBtn img {
   margin-left: 10px;
 }
 
-.div-sites {
+.sitesDiv {
   display: flex;
   flex-wrap: wrap;
   width: 86vw;
   margin-top: 34px;
 }
 
-.card-sites {
+.sitesCard {
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
@@ -386,19 +383,21 @@
   color: #fffbfb;
 }
 
-.hoverEffect:hover {
+.builtRec:hover,
+.searchBtn:hover,
+.sitesCard:hover {
   -ms-transform: scaleY(1.25);
   transform: scale(1.02);
   background: #26282e;
   cursor: pointer;
 }
 
-.card-avatar {
+.avatarCard {
   display: flex;
   justify-content: space-between;
 }
 
-.span-badge {
+.badgeSpan {
   border-radius: 6px;
   height: fit-content;
   padding: 5px 7px;
@@ -407,14 +406,14 @@
   line-height: 16px;
 }
 
-.text-sites {
+.sitesText {
   margin-top: 15px;
   font-family: "Roboto";
   font-weight: 600;
   width: 170px;
 }
 
-.text-sites p {
+.sitesText p {
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -422,7 +421,7 @@
   color: #858b9b;
 }
 
-.div-comingsoon {
+.futureDiv {
   margin-top: 77px;
   background-image: url(../public/bg5.png);
   background-size: cover;
@@ -433,12 +432,12 @@
   padding-left: 74px;
 }
 
-.div-comingsoon:hover {
+.futureDiv:hover {
   background-image: url(../public/bg5-transparent.png);
   transform: scale(1.01);
 }
 
-.title-comingsoon {
+.futureTitle {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -447,7 +446,7 @@
   color: #fffbfb;
 }
 
-.text-comingsoon {
+.futureText {
   margin-top: 15px;
   max-width: 800px;
   font-family: "Roboto";
@@ -456,6 +455,27 @@
   font-size: 18px;
   line-height: 26px;
   color: #fffbfb;
+}
+
+.footer {
+  margin-top: 109px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #fffbfb;
+}
+
+.logo {
+  margin-right: 4px;
+  margin-top: 4px;
 }
 
 @media screen and (max-width: 760px) {
@@ -472,25 +492,26 @@
     justify-content: center;
   }
 
-  .div-built {
+  .builtDiv {
     flex-direction: column;
+    align-items: center;
   }
 
-  .card-built {
+  .cardDiv {
     padding-top: 250px;
     width: auto;
   }
 
-  .rectangle-built {
+  .builtRec {
     margin: 20px;
     width: auto;
   }
 
-  .img-built {
+  .builtImg {
     margin: 0 20px;
   }
 
-  .div-incom {
+  .incomDiv {
     margin: 10px 0;
     width: auto;
     background: url(../public/bg3.png);
@@ -500,30 +521,30 @@
     padding: 5px;
   }
 
-  .div-income {
+  .incomeDiv {
     display: none;
   }
 
-  .content-browse {
+  .browseContent {
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
   }
 
-  .content-browse div {
+  .browseContent div {
     height: auto;
   }
 
-  .div-search * {
+  .searchDiv * {
     margin: 10px;
   }
 
-  .div-sites {
+  .sitesDiv {
     justify-content: center;
   }
 
-  .div-comingsoon {
+  .futureDiv {
     height: auto;
     padding: 50px 20px;
   }

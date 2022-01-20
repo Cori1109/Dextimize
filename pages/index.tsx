@@ -17,24 +17,26 @@ const Home: NextPage = () => {
         ></link>
       </Head>
       <div className={styles.main}>
-        <div className="topbar">
-          <div className="div-Logo">
+        <div className={styles.topBar}>
+          <div className={styles.logoLink}>
             <img src="favicon.png" width="22px" height="22px" />
             Dappers
           </div>
-          <div className="div-sign">
+          <div className={styles.signLink}>
             <img src="avatar.png" width="20px" height="22px" />
             Sign In
           </div>
         </div>
         <div className={styles.welcomeDiv}>
-          <div className="div-inside">
-            <div className="title-welcome">WEB 3.0 AT YOUR FINGERTIPS</div>
+          <div>
+            <div className={styles.welcomeTitle}>
+              WEB 3.0 AT YOUR FINGERTIPS
+            </div>
 
             <div className={styles.description}>
               We provide you the framework to jet speed your ideas.
             </div>
-            <div className="div-link">
+            <div className={styles.linkDiv}>
               <a href="#">
                 <img
                   src="/github-icon.png"
@@ -64,7 +66,7 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.chooseDiv}>
-          <div className="div-text">
+          <div>
             <div className={styles.welTitle}>CHOOSE FROM</div>
 
             <div className={styles.chooseText}>
@@ -74,19 +76,34 @@ const Home: NextPage = () => {
           <div className={styles.platformDiv}>
             <Link href="/dex">
               <a>
-                <Image src="/dex-icon.png" width={90} height={90} />
+                <Image
+                  src="/dex-icon.png"
+                  alt="DexIcon"
+                  width={132}
+                  height={141}
+                />
                 <div>DEX</div>
               </a>
             </Link>
             <Link href="/nftmarket">
               <a>
-                <Image src="/nftmarket-icon.png" width={90} height={90} />
+                <Image
+                  src="/nftmarket-icon.png"
+                  alt="NFTMarketIcon"
+                  width={132}
+                  height={141}
+                />
                 <div>NFT Market</div>
               </a>
             </Link>
             <Link href="/cryptogame">
               <a>
-                <Image src="/cryptogame-icon.png" width={90} height={90} />
+                <Image
+                  src="/cryptogame-icon.png"
+                  alt="CryptoGame"
+                  width={132}
+                  height={141}
+                />
                 <div>Crypto Game</div>
               </a>
             </Link>
