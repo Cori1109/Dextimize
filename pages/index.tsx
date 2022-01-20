@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -15,20 +16,18 @@ const Home: NextPage = () => {
           rel="stylesheet"
         ></link>
       </Head>
-
-      <div className="div-top">
-        <div className="div-Logo">
-          <img src="logo.png" width="22px" height="22px" />
-          Dappers
+      <div className={styles.main}>
+        <div className="topbar">
+          <div className="div-Logo">
+            <img src="favicon.png" width="22px" height="22px" />
+            Dappers
+          </div>
+          <div className="div-sign">
+            <img src="avatar.png" width="20px" height="22px" />
+            Sign In
+          </div>
         </div>
-        <div className="div-sign">
-          <img src="avatar.png" width="20px" height="22px" />
-          Sign In
-        </div>
-      </div>
-
-      <main className={styles.main}>
-        <div className="div-welcome">
+        <div className={styles.welcomeDiv}>
           <div className="div-inside">
             <div className="title-welcome">WEB 3.0 AT YOUR FINGERTIPS</div>
 
@@ -64,186 +63,36 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <div className="div-builtStep">
-          <a href="#" className="card-grid card-dex hoverScaled">
-            <div>Build your DEX</div>
-          </a>
-          <a href="#" className="card-grid card-token hoverScaled">
-            <div>Create a token</div>
-          </a>
-          <a href="#" className="card-grid card-liquid hoverScaled">
-            <div>Provide liquidity</div>
-          </a>
-          <a href="#" className="card-grid card-trading hoverScaled">
-            <div>Stake and earn</div>
-            <div>APR</div>
-          </a>
-        </div>
+        <div className={styles.chooseDiv}>
+          <div className="div-text">
+            <div className={styles.welTitle}>CHOOSE FROM</div>
 
-        <div className="div-built">
-          <div className="card-built">
-            <div className="title-built">
-              A growing ecosystem of decentralized exchanges built with
-              Dextimize.
+            <div className={styles.chooseText}>
+              Launch your own decentralized crypto currency application.
             </div>
-            <p>Learn more</p>
           </div>
-          <div className="div-inbuilt">
-            <div className="rectangle-built hoverEffect">
-              <div className="img-built">
-                <img src="/icons-lightning.png" alt="Lightning Icon" />
-              </div>
-              <div className="text-built">
-                <div className="subTitle">Build fast</div>
-                <div className="subText">
-                  Create a functioning DEX in a few easy steps
-                </div>
-              </div>
-            </div>
-            <div className="rectangle-built hoverEffect">
-              <div className="img-built">
-                <img src="/icons-creativity.png" alt="Creativity Icon" />
-              </div>
-              <div className="text-built">
-                <div className="subTitle">Build smart</div>
-                <div className="subText">
-                  Token and liquidity functions streamlined so you can bring
-                  your idea to life
-                </div>
-              </div>
-            </div>
-            <div className="rectangle-built hoverEffect">
-              <div className="img-built">
-                <img src="/icons-crowdfunding.png" alt="Crowdfunding Icon" />
-              </div>
-              <div className="text-built">
-                <div className="subTitle">Expand</div>
-                <div className="subText">Build upon your initial DEX</div>
-              </div>
-            </div>
+          <div className={styles.platformDiv}>
+            <Link href="/dex">
+              <a>
+                <Image src="/dex-icon.png" width={90} height={90} />
+                <div>DEX</div>
+              </a>
+            </Link>
+            <Link href="/nftmarket">
+              <a>
+                <Image src="/nftmarket-icon.png" width={90} height={90} />
+                <div>NFT Market</div>
+              </a>
+            </Link>
+            <Link href="/cryptogame">
+              <a>
+                <Image src="/cryptogame-icon.png" width={90} height={90} />
+                <div>Crypto Game</div>
+              </a>
+            </Link>
           </div>
         </div>
-        <div className="div-community">
-          <div className="div-incom">
-            <div className="title-comm">Discover the Dextimize community</div>
-            <div className="text-comm">
-              Build, earn, learn, favorite, and explore with Dextimize. Connect
-              with us on Twitter, Discord, and Instagram and visit #dextimize
-              for inspiration.
-            </div>
-          </div>
-          <div className="div-income">
-            <img src="/bg3.png" />
-          </div>
-        </div>
-        <div className="div-browse">
-          <div className="content-browse">
-            <div className="title-browse">
-              Browse and search DEX built with the Dextimize ecosystem
-            </div>
-            <div className="text-browse">
-              Browse and search DEX built with the Dextimize ecosystem
-            </div>
-          </div>
-          <div className="div-search">
-            <input type="text" placeholder="Search" className="input-search" />
-            <button className="btn-search hoverEffect">New</button>
-            <button className="btn-search hoverEffect">Most viewed</button>
-            <button className="btn-search hoverEffect">
-              Add filter
-              <img src="/icons-circle-plus.png" width={18} height={18} />
-            </button>
-          </div>
-        </div>
-        <div className="div-sites">
-          <div className="card-sites hoverEffect">
-            <div className="card-avatar">
-              <img src="/icons-Aave.png" />
-              <span className="span-badge">Dapp</span>
-            </div>
-            <div className="text-sites">
-              Aave
-              <p>Earn interest by depositing and borrowing assets.</p>
-            </div>
-          </div>
-          <div className="card-sites hoverEffect">
-            <div className="card-avatar">
-              <img src="/icons-1inch.png" />
-              <span className="span-badge">Aggregator</span>
-            </div>
-            <div className="text-sites">
-              1inch
-              <p>DeFi/DEX aggregator.</p>
-            </div>
-          </div>
-          <div className="card-sites hoverEffect">
-            <div className="card-avatar">
-              <img src="/icons-Status.png" />
-              <span className="span-badge">Dapp</span>
-            </div>
-            <div className="text-sites">
-              Status
-              <p>Secure messaging app, wallet, and web3 browser.</p>
-            </div>
-          </div>
-          <div className="card-sites hoverEffect">
-            <div className="card-avatar">
-              <img src="/icons-Futureswap.png" />
-              <span className="span-badge">Dapp</span>
-            </div>
-            <div className="text-sites">
-              Futureswap
-              <p>Decentralized trading protocol for perpetual swaps.</p>
-            </div>
-          </div>
-          <div className="card-sites hoverEffect">
-            <div className="card-avatar">
-              <img src="/icons-Zerion.png" />
-              <span className="span-badge">Tool</span>
-            </div>
-            <div className="text-sites">
-              Zerion
-              <p>Build and manage your DeFi portfolio in one place.</p>
-            </div>
-          </div>
-          <div className="card-sites hoverEffect">
-            <div className="card-avatar">
-              <img src="/icons-Aloe.png" />
-              <span className="span-badge">Dapp</span>
-            </div>
-            <div className="text-sites">
-              Aloe
-              <p>Active liquidity provision solution for advanced AMMs.</p>
-            </div>
-          </div>
-        </div>
-        <div className="div-comingsoon">
-          <div className="shadow-comingsoon">
-            <div className="title-comingsoon">
-              The easiest and quickest way to launch your DEX
-            </div>
-            <div className="text-comingsoon">
-              Dextimize is the first generative platform to streamline launching
-              your own DEX. You can customize and create your own exchange in a
-              matter of minutes
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hoverScaled"
-        >
-          <span className={styles.logo}>
-            <Image src="/circleC.svg" alt="circleC" width={17} height={12} />
-          </span>
-          Copyright 2021 Dappers
-        </a>
-      </footer>
+      </div>
     </div>
   );
 };
